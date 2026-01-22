@@ -169,7 +169,7 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
               return (
                 <h1
                   style={{
-                    fontSize: "52px",
+                    fontSize: "72px",
                     fontWeight: 700,
                     fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                     color: "#fff",
@@ -192,11 +192,11 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
               return (
                 <p
                   style={{
-                    fontSize: "22px",
+                    fontSize: "24px",
                     fontWeight: 400,
                     fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                     color: "rgba(255, 255, 255, 0.6)",
-                    marginBottom: "20px",
+                    marginBottom: "24px",
                     opacity: descOpacity,
                   }}
                 >
@@ -218,8 +218,8 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
                   <div
                     key={tag}
                     style={{
-                      padding: "6px 14px",
-                      borderRadius: "6px",
+                      padding: "8px 18px",
+                      borderRadius: "8px",
                       backgroundColor: hexToRgba(accentColor, 0.15),
                       border: `1px solid ${hexToRgba(accentColor, 0.3)}`,
                       opacity: tagOpacity,
@@ -227,7 +227,7 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
                   >
                     <span
                       style={{
-                        fontSize: "13px",
+                        fontSize: "28px",
                         fontWeight: 500,
                         fontFamily: "SF Mono, Monaco, Consolas, monospace",
                         color: accentColor,
@@ -266,12 +266,12 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
               >
                 <span
                   style={{
-                    fontSize: "13px",
+                    fontSize: "24px",
                     fontWeight: 600,
                     fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                     color: accentColor,
                     textTransform: "uppercase",
-                    letterSpacing: "2px",
+                    letterSpacing: "4px",
                   }}
                 >
                   Key Topics
@@ -319,20 +319,20 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
                 {/* Bullet/number */}
                 <div
                   style={{
-                    width: "32px",
-                    height: "32px",
-                    borderRadius: "8px",
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "10px",
                     backgroundColor: hexToRgba(accentColor, 0.15 + highlightProgress * 0.25),
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginRight: "20px",
+                    marginRight: "24px",
                     flexShrink: 0,
                   }}
                 >
                   <span
                     style={{
-                      fontSize: "14px",
+                      fontSize: "24px",
                       fontWeight: 600,
                       fontFamily: "SF Mono, Monaco, Consolas, monospace",
                       color: accentColor,
@@ -345,7 +345,7 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
                 {/* Feature text */}
                 <span
                   style={{
-                    fontSize: "18px",
+                    fontSize: "28px",
                     fontWeight: 500,
                     fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                     color: `rgba(255, 255, 255, ${0.8 + highlightProgress * 0.2})`,
@@ -364,7 +364,7 @@ export const GuidelineDemo: React.FC<GuidelineDemoProps> = ({
                 >
                   <span
                     style={{
-                      fontSize: "20px",
+                      fontSize: "28px",
                       color: accentColor,
                     }}
                   >

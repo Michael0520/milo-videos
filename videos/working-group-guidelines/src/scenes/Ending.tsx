@@ -9,14 +9,14 @@ import {
 
 // Mini SVG icons for badges
 const BookIconSmall: React.FC<{ color: string }> = ({ color }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
   </svg>
 );
 
 const SyncIconSmall: React.FC<{ color: string }> = ({ color }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
     <path d="M3 3v5h5" />
     <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
@@ -25,7 +25,7 @@ const SyncIconSmall: React.FC<{ color: string }> = ({ color }) => (
 );
 
 const RocketIconSmall: React.FC<{ color: string }> = ({ color }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
     <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
   </svg>
@@ -259,7 +259,7 @@ export const Ending: React.FC = () => {
           return (
             <h1
               style={{
-                fontSize: "64px",
+                fontSize: "80px",
                 fontWeight: 700,
                 fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                 color: "#fff",
@@ -311,7 +311,7 @@ export const Ending: React.FC = () => {
             >
               <span
                 style={{
-                  fontSize: "32px",
+                  fontSize: "40px",
                   fontWeight: 600,
                   fontFamily: "SF Mono, Monaco, Consolas, monospace",
                   color: "#3b82f6",
@@ -343,7 +343,7 @@ export const Ending: React.FC = () => {
           return (
             <p
               style={{
-                fontSize: "24px",
+                fontSize: "32px",
                 fontWeight: 400,
                 fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                 color: "rgba(255, 255, 255, 0.7)",
@@ -400,7 +400,7 @@ export const Ending: React.FC = () => {
                 {badge.icon}
                 <span
                   style={{
-                    fontSize: "18px",
+                    fontSize: "24px",
                     fontWeight: 500,
                     fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                     color: "#fff",
@@ -433,11 +433,11 @@ export const Ending: React.FC = () => {
           >
             <span
               style={{
-                fontSize: "16px",
+                fontSize: "24px",
                 fontWeight: 500,
                 fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                 color: "rgba(255, 255, 255, 0.5)",
-                letterSpacing: "3px",
+                letterSpacing: "4px",
                 textTransform: "uppercase",
               }}
             >

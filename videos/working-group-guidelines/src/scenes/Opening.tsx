@@ -240,7 +240,7 @@ export const Opening: React.FC = () => {
               key={`letter-${i}`}
               style={{
                 display: "inline-block",
-                fontSize: "72px",
+                fontSize: "112px",
                 fontWeight: 700,
                 fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                 color: "#fff",
@@ -279,7 +279,7 @@ export const Opening: React.FC = () => {
           return (
             <span
               style={{
-                fontSize: "32px",
+                fontSize: "48px",
                 fontWeight: 500,
                 fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                 color: "rgba(255, 255, 255, 0.7)",
@@ -287,7 +287,7 @@ export const Opening: React.FC = () => {
                 transform: `scale(${subtitleSpring})`,
                 display: "block",
                 textAlign: "center",
-                letterSpacing: "4px",
+                letterSpacing: "5px",
                 textTransform: "uppercase",
               }}
             >
@@ -341,7 +341,7 @@ export const Opening: React.FC = () => {
             >
               <span
                 style={{
-                  fontSize: "18px",
+                  fontSize: "28px",
                   fontWeight: 600,
                   fontFamily: "SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif",
                   color: color.border,
