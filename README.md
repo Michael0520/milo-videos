@@ -1,51 +1,34 @@
-# ClaudeKit Intro Video
+# Remotion Videos Monorepo
 
-A promotional video for ClaudeKit built with [Remotion](https://www.remotion.dev/), showcasing its 5 core plugins.
+A monorepo for Remotion-based video projects with shared animation components.
 
-## Video Specifications
+## Structure
 
-- **Resolution:** 1920 x 1080 (Full HD)
-- **Frame Rate:** 30 fps
-- **Duration:** 30 seconds (900 frames)
-
-## Video Timeline
-
-| Time | Scene | Description |
-|------|-------|-------------|
-| 0-3s | Opening | ClaudeKit branding animation & logo |
-| 3-8s | git | Commit validation demo |
-| 8-13s | rubric | Automated code review |
-| 13-18s | superpowers | TDD workflow |
-| 18-23s | worktree-manager | Parallel development workflow |
-| 23-27s | chrome-devtools | Browser automation testing |
-| 27-30s | Ending | Install command & GitHub link |
+```
+remotion-videos/
+├── packages/
+│   └── shared/                     # Shared animation components
+│       └── src/
+│           ├── Terminal.tsx        # Terminal emulator
+│           ├── TypeWriter.tsx      # Typewriter effect
+│           ├── FadeIn.tsx          # Fade-in animation
+│           └── Highlight.tsx       # Text highlight
+│
+└── videos/
+    └── claudekit-intro/            # ClaudeKit promotional video
+        └── src/
+            ├── Root.tsx
+            ├── ClaudekitIntro.tsx
+            ├── scenes/
+            └── data/
+```
 
 ## Tech Stack
 
 - **Remotion** - React-based programmatic video creation framework
 - **React 18** - UI components
 - **TypeScript** - Type safety
-- **Bun** - Package manager
-
-## Project Structure
-
-```
-src/
-├── index.ts              # Entry point
-├── Root.tsx              # Composition definition
-├── ClaudekitIntro.tsx    # Main video component
-├── scenes/
-│   ├── Opening.tsx       # Opening animation
-│   ├── PluginDemo.tsx    # Plugin showcase template
-│   └── Ending.tsx        # Ending animation
-├── components/
-│   ├── Terminal.tsx      # Terminal emulator
-│   ├── TypeWriter.tsx    # Typewriter effect
-│   ├── FadeIn.tsx        # Fade-in animation
-│   └── Highlight.tsx     # Text highlight
-└── data/
-    └── terminalContent.ts # Terminal content data
-```
+- **Bun** - Package manager with workspaces
 
 ## Getting Started
 
@@ -55,29 +38,46 @@ src/
 bun install
 ```
 
-### Development Preview
+### Development
 
-Launch Remotion Studio for live preview and editing:
+Launch Remotion Studio for a specific video:
 
 ```bash
+cd videos/claudekit-intro
 bun run dev
 ```
 
 ### Render Video
 
-Render MP4 video to the `out/` directory:
-
 ```bash
+cd videos/claudekit-intro
 bun run build
 ```
 
-## Visual Features
+## Shared Components
 
-- Dark theme with gradient backgrounds
-- Particle system and light ray animations
-- Smart terminal emulator with typing animation and color coding
-- Plugin-specific color themes
-- Spring physics animations
+The `@milo-videos/shared` package provides reusable animation components:
+
+- **Terminal** - Terminal emulator with typing animation
+- **TypeWriter** - Typewriter text effect
+- **FadeIn** - Fade-in with slide animation
+- **Highlight** - Spring-animated text highlight
+
+Import in your video projects:
+
+```tsx
+import { Terminal, TypeWriter, FadeIn, Highlight } from "@milo-videos/shared";
+```
+
+## Videos
+
+### claudekit-intro
+
+ClaudeKit promotional video showcasing its core plugins.
+
+- **Resolution:** 1920 x 1080 (Full HD)
+- **Frame Rate:** 30 fps
+- **Duration:** 30 seconds
 
 ## License
 

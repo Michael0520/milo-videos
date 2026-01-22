@@ -3,16 +3,29 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "claudekit-intro-video",
+      "name": "remotion-videos",
+      "devDependencies": {
+        "@types/react": "^18.2.0",
+        "typescript": "^5.0.0",
+      },
+    },
+    "packages/shared": {
+      "name": "@milo-videos/shared",
+      "version": "1.0.0",
+      "peerDependencies": {
+        "react": "^18.2.0",
+        "remotion": "^4.0.0",
+      },
+    },
+    "videos/claudekit-intro": {
+      "name": "claudekit-intro",
+      "version": "1.0.0",
       "dependencies": {
+        "@milo-videos/shared": "workspace:*",
         "@remotion/cli": "^4.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "remotion": "^4.0.0",
-      },
-      "devDependencies": {
-        "@types/react": "^18.2.0",
-        "typescript": "^5.0.0",
       },
     },
   },
@@ -78,6 +91,8 @@
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.5", "", {}, "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="],
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
+
+    "@milo-videos/shared": ["@milo-videos/shared@workspace:packages/shared"],
 
     "@remotion/bundler": ["@remotion/bundler@4.0.409", "", { "dependencies": { "@remotion/media-parser": "4.0.409", "@remotion/studio": "4.0.409", "@remotion/studio-shared": "4.0.409", "css-loader": "5.2.7", "esbuild": "0.25.0", "react-refresh": "0.9.0", "remotion": "4.0.409", "source-map": "0.7.3", "style-loader": "4.0.0", "webpack": "5.96.1" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-BSmpf3ooe1+pSIVDwd/LKlMbzboQHUDkToLZiPoDAsdbfjE45zZyVmEYKSiwx1kfPShr+zjnTv85CSdN85BsXQ=="],
 
@@ -198,6 +213,8 @@
     "caniuse-lite": ["caniuse-lite@1.0.30001765", "", {}, "sha512-LWcNtSyZrakjECqmpP4qdg0MMGdN368D7X8XvvAqOcqMv0RxnlqVKZl2V6/mBR68oYMxOZPLw/gO7DuisMHUvQ=="],
 
     "chrome-trace-event": ["chrome-trace-event@1.0.4", "", {}, "sha512-rNjApaLzuwaOTjCiT8lSDdGN1APCiqkChLMJxJPWLunPAt5fy8xgU9/jNOchV84wfIxrA0lRQB7oCT8jrn/wrQ=="],
+
+    "claudekit-intro": ["claudekit-intro@workspace:videos/claudekit-intro"],
 
     "commander": ["commander@2.20.3", "", {}, "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ=="],
 

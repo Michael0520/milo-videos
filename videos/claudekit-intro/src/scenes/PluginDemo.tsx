@@ -5,7 +5,7 @@ import {
   spring,
   useVideoConfig,
 } from "remotion";
-import { Terminal } from "../components/Terminal";
+import { Terminal } from "@milo-videos/shared";
 import { pluginTerminalContent } from "../data/terminalContent";
 
 interface PluginDemoProps {
